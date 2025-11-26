@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package buccialexpunto;
-import java.util.Scanner;
+import java.util.*;
 /**
  *
  * @author bucci.alex
@@ -76,7 +76,30 @@ public class Test {
         System.out.println("il punto si trova nel punto " + p.getX() + " " + p.getY() + " (dentro il quadrato) dopo " + i + " tentativi");
         
         
+        // cerchio 1
+        System.out.println("inserire la cordinata x del centro del cerchio:");
+        int xCerchio = input.nextInt();
+        System.out.println("inserire la coordinata y del centro del cerchio:");
+        int yCerchio = input.nextInt();
+        System.out.println("inserire il raggio del cerchio:");
+        int raggio = input.nextInt();
         
+        Cerchio c1 = new Cerchio(raggio, xCerchio, yCerchio);
         
+        float distanzaOrigineCerchio = c1.distanzaDaOrigine();
+        System.out.println("la distanza dell'origine dal cerchio è " + distanzaOrigineCerchio);
+        
+        System.out.println("inserire la cordinata x del centro del cerchio:");
+        xCerchio = input.nextInt();
+        System.out.println("inserire la coordinata y del centro del cerchio:");
+        yCerchio = input.nextInt();
+        System.out.println("inserire il raggio del cerchio:");
+        raggio = input.nextInt();
+        
+        Cerchio c2 = new Cerchio(raggio, xCerchio, yCerchio);
+        
+        double distanzaCerchi = c1.distanzaCerchi(c2);
+        
+        System.out.println("la distanza tra i 2 cerchi è: " + distanzaCerchi);
     }
 }

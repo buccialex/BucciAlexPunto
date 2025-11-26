@@ -9,8 +9,8 @@ import java.util.Random;
  * @author bucci.alex
  */
 public class Punto {
-    private int y;
-    private int x;
+    protected int y;
+    protected int x;
     /**
      * 
      * @param x coordinata x del punto
@@ -35,14 +35,14 @@ public class Punto {
      * 
      * @return coordinata X
      */
-    public int getX(){
+    public double getX(){
         return this.x;
     }
     /**
      * 
      * @return coordinata y
      */
-    public int getY(){
+    public double getY(){
         return this.y;
     }
     /**

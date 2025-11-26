@@ -12,7 +12,7 @@ public class Quadrato {
     // attributi
     private Punto a, b;
     private int perimetro;
-    private int lato;
+    private double lato;
     private double area;
     
     /**
@@ -50,7 +50,7 @@ public class Quadrato {
      * metodo per calcolare il perimetro del quadrato
      */
     public void calcolaPerimetro(){
-        perimetro = lato * 4;
+        perimetro = (int) (lato * 4);
     }
     
     /**
@@ -65,7 +65,7 @@ public class Quadrato {
      * @return il valore del lato del quadrato
      */
     public int getlato(){
-        return lato;
+        return (int) lato;
     }
     
     /**
@@ -91,11 +91,11 @@ public class Quadrato {
     public boolean checkPunto(Punto p, Punto a){
         int cMax, cMin;
         if (this.a.getX() > this.a.getY()){
-            cMax = this.a.getX();
-            cMin = this.a.getY();
+            cMax = (int) this.a.getX();
+            cMin = (int) this.a.getY();
         } else {
-            cMax = this.a.getY();
-            cMin = this.a.getX();
+            cMax = (int) this.a.getY();
+            cMin = (int) this.a.getX();
         }
         return cMax >= p.getX() && cMax >= p.getY() && cMin <= p.getX() && cMin <= p.getY();
     }
