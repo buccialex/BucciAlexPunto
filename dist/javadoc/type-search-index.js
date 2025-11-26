@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"buccialexpunto","l":"BucciAlexPunto"},{"p":"buccialexpunto","l":"Punto"},{"p":"buccialexpunto","l":"Quadrato"},{"p":"buccialexpunto","l":"Test"}];updateSearchResults();
