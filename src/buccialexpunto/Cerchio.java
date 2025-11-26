@@ -36,7 +36,7 @@ public class Cerchio extends Punto {
     }
     
     public double distanzaCerchi(Cerchio c){
-        return Math.sqrt((Math.pow((this.getX()-this.getRaggio()), 2) + (Math.pow((c.getX()-c.getRaggio()), 2))) - (this.getRaggio() + this.getRaggio()));
+        return Math.sqrt((Math.pow((this.getX()-this.getRaggio()), 2) + (Math.pow((c.getX()-c.getRaggio()), 2))) - (this.getRaggio() + c.getRaggio()));
     }
     
     public float distanzaDaOrigine(){
