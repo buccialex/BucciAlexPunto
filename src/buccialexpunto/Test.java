@@ -85,6 +85,7 @@ public class Test {
         int raggio = input.nextInt();
         
         Cerchio c1 = new Cerchio(raggio, xCerchio, yCerchio);
+        System.out.println(c1);
         
         float distanzaOrigineCerchio = c1.distanzaDaOrigine();
         System.out.println("la distanza dell'origine dal cerchio è " + distanzaOrigineCerchio);
@@ -98,7 +99,13 @@ public class Test {
         
         Cerchio c2 = new Cerchio(raggio, xCerchio, yCerchio);
         
+        System.out.println(c2);
+        
         double distanzaCerchi = c1.distanzaCerchi(c2);
+        
+        if (c1.intersezione(c2) == true){
+            System.out.println("i cerchi si intersecano");
+        }
         
         System.out.println("la distanza tra i 2 cerchi è: " + distanzaCerchi);
     }

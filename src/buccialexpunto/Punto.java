@@ -72,9 +72,41 @@ public class Punto {
         Random random = new Random();
         p.sposta(random.nextInt(0, confineX), random.nextInt(0, confineY));
     }
+    
+    /**
+     * override tostring
+     * @return attributi dell'oggetto
+     */
+    @Override
+    public String toString() {
+        return "Punto{" + "y=" + y + ", x=" + x + '}';
+    }
+
+    /**
+     * override equals
+     * @param obj oggetto da comparare
+     * @return se i 2 oggetti hanno stessi attributi
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Punto other = (Punto) obj;
+        if (this.y != other.y) {
+            return false;
+        }
+        return this.x == other.x;
+    }
 
     
-
+    
     
     
     
